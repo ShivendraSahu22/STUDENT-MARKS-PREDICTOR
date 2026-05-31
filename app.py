@@ -21,8 +21,9 @@ def health_check():
 
 
 @app.post('/predict', response_model=PredictionResponse)
-def predict(user_input: UserInput):
+def predict(data: UserInput):
 
     user_input = {
-        ''
+        'number_courses': data.number_courses,
+        'time_study': data.time_study,
     }
