@@ -1,7 +1,9 @@
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field
 from typing import Annotated, Literal
 
 
 
 class UserInput(BaseModel):
-    
+
+     'number_courses': Annotated[int, Field(..., description="Number of courses taken by the student")]
+     'time_study': Annotated[float, Field(..., description="Time spent studying")]
