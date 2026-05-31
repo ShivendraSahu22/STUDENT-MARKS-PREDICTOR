@@ -11,5 +11,7 @@ app = FastAPI()
 def home():
     return {'message':'Student Marks Predictor API'}
 
+
+
 @app.post('/predict', response_model=PredictionResponse)
 def predict(user_input: UserInput):
