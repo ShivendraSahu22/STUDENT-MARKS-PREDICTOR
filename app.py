@@ -11,6 +11,13 @@ app = FastAPI()
 def home():
     return {'message':'Student Marks Predictor API'}
 
+@app.get('/health')
+def health_check():
+    return {
+        'status': 'OK',
+        'version': MODEL_VERSION,
+        'model_loaded': model is not None
+    }
 
 
 @app.post('/predict', response_model=PredictionResponse)
