@@ -27,3 +27,13 @@ def predict(data: UserInput):
         'number_courses': data.number_courses,
         'time_study': data.time_study,
     }
+
+    try:
+
+        prediction = predict_output(user_input)
+
+        return JSONResponse(status_code=200, content={'response': prediction})
+    
+    except Exception as e:
+
+        return JSONResponse(status_code=500, content=str(e))
