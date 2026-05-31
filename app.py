@@ -22,3 +22,7 @@ def health_check():
 
 @app.post('/predict', response_model=PredictionResponse)
 def predict(user_input: UserInput):
+
+    user_input = {
+        ''
+    }
