@@ -1,5 +1,4 @@
-from fastapi import FastAPI
-from fastapi.responses import JSONResponse
+from fastapi import FastAPI, HTTPException
 from schema.user_input import UserInput
 from schema.prediction_response import PredictionResponse
 from model.predict import predict_marks, model, MODEL_VERSION
@@ -25,17 +24,12 @@ def health_check():
 @app.post('/predict', response_model=PredictionResponse)
 def predict(data: UserInput):
 
-    user_input = {
-        'number_courses': data.number_courses,
-        'time_study': data.time_study,
-    }
-
     try:
 
-        prediction = predict_marks(user_input)
+        prediction = predict_marks(data)
 
-        return JSONResponse(status_code=200, content={'response': prediction})
+        return {'predicted_marks': prediction}
     
     except Exception as e:
 
-        return JSONResponse(status_code=500, content=str(e))
+        raise HTTPException(status_code=500, detail=str(e)) from e

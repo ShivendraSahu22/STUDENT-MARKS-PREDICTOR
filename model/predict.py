@@ -1,6 +1,6 @@
 import pickle
 
-with open('model/model.pkl', 'rb') as f:
+with open('model/model1.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # MLFlow
@@ -13,4 +13,4 @@ def predict_marks(user_input):
     # Make prediction using the loaded model
     predicted_marks = model.predict(input_data)
     
-    return predicted_marks[0]
+    return float(predicted_marks[0])
