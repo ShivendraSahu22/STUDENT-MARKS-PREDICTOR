@@ -4,6 +4,5 @@ from typing import Dict
 class PredictionResponse(BaseModel):
     predicted_marks: float = Field(
         ...,
-        description="The predicted student marks",
-        example=85.5
+        description="The predicted student marks"
     )
