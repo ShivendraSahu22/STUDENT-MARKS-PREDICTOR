@@ -1,6 +1,7 @@
 from pydantic import BaseModel, Field, field_validator
 from typing import Annotated
 from schema.user_input import UserInput
+from model.predict import predict_output, model, MODEL_VERSION
 
 
 
