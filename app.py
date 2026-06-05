@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from schema.user_input import UserInput
-from schema.prediction_response import PredictionResponse
+#from schema.prediction_response import PredictionResponse
 from schema.user_input import UserInput
 from model.predict import predict_marks, model, MODEL_VERSION
 
