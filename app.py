@@ -32,7 +32,7 @@ def predict(data: UserInput):
 
     try:
 
-        prediction = predict_output(user_input)
+        prediction = predict_marks(user_input)
 
         return JSONResponse(status_code=200, content={'response': prediction})
     
