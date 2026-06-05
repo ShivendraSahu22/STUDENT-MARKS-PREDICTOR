@@ -1,8 +1,5 @@
 from pydantic import BaseModel, Field, field_validator
 from typing import Annotated
-from schema.user_input import UserInput
-from model.predict import predict_marks, model, MODEL_VERSION
-
 
 
 class UserInput(BaseModel):
