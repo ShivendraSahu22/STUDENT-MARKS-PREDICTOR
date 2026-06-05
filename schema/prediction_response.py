@@ -2,8 +2,8 @@ from pydantic import BaseModel, Field
 from typing import Dict
 
 class PredictionResponse(BaseModel):
-    predicted_category: str = Field(
+    predicted_marks: float = Field(
         ...,
-        description="The predicted insurance premium category",
-        example="High"
+        description="The predicted student marks",
+        example=85.5
     )
