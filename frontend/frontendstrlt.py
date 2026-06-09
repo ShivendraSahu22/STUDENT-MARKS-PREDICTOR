@@ -20,10 +20,8 @@ if st.button("Predict Student Marks"):
         response = requests.post(API_URL, json=input_data)
         result = response.json()
 
-        if response.status_code == 200 and "response" in result:
-            prediction = result["response"]
-            st.success(f"Predicted Student Marks: **{prediction['predicted_marks']}**")
-
+        if response.status_code == 200:
+            st.success(f"Predicted Student Marks: {result['predicted_marks']}")
         else:
             st.error(f"API Error: {response.status_code}")
             st.write(result)
