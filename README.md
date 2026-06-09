@@ -2,6 +2,10 @@
 
 An AI-powered web application that predicts student marks based on study-related inputs using Machine Learning, FastAPI, and Streamlit.
 
+
+
+![image alt](https://github.com/ShivendraSahu22/STUDENT-MARKS-PREDICTOR/blob/8e9819f1ab91c1bd2f5bb8f41beb03e649bc8a9a/front_page_.png)
+
 ---
 
 # 🚀 Project Overview
