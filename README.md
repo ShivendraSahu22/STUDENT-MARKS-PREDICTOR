@@ -4,7 +4,9 @@ An AI-powered web application that predicts student marks based on study-related
 
 
 
-![image alt](https://github.com/ShivendraSahu22/STUDENT-MARKS-PREDICTOR/blob/8e9819f1ab91c1bd2f5bb8f41beb03e649bc8a9a/front_page_.png)
+![image alt](https://github.com/ShivendraSahu22/STUDENT-MARKS-PREDICTOR/blob/4d9b75afbabd122c7d2cea77ed6e44812a4d7438/_front_page_.png)
+
+
 
 ---
 
