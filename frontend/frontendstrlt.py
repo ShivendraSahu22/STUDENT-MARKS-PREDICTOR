@@ -15,7 +15,6 @@ if st.button("Predict Student Marks"):
         "number_courses": number_courses,
         "time_study": time_study
     }
-    
 
     try:
         response = requests.post(API_URL, json=input_data)
