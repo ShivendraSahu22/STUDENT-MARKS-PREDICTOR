@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from schema.user_input import UserInput
 from schema.prediction_response import PredictionResponse
-from model.predict import predict_marks, model, MODEL_VERSION
+from predict import predict_marks, model, MODEL_VERSION
 
 
 
