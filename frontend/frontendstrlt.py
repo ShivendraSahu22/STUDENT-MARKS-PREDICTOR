@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_URL = "http://localhost:8000/predict"  # Update with your FastAPI server URL
+API_URL = "https://student-marks-predictor-vtzn.onrender.com/predict"  # Update with your FastAPI server URL
 
 st.title("STUDENT MARKS PREDICTOR")
 st.markdown("Enter your details below:")
