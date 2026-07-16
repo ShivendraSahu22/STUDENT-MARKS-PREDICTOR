@@ -85,7 +85,7 @@ STUDENT-MARKS-PREDICTOR/
 
 This project is created for educational and learning purposes.
 
----
+--- 
 
 # 👨‍💻 Author
 
