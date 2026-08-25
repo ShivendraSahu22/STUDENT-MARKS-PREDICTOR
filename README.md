@@ -12,7 +12,7 @@ An AI-powered web application that predicts student marks based on study-related
 ---  
 
 # 🚀 Project Overview
-
+ 
 The **Student Marks Predictor** is a Machine Learning project that estimates a student's marks using features like:
 
 * 📚 Number of Courses
