@@ -9,7 +9,7 @@ An AI-powered web application that predicts student marks based on study-related
 
 
 
----  
+--- 
 
 # 🚀 Project Overview
  
