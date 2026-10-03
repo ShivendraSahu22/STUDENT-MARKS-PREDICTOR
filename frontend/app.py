@@ -6,7 +6,7 @@ API_URL = "https://student-marks-predictor-2xna.onrender.com/predict"  # Update 
 st.title("STUDENT MARKS PREDICTOR")
 st.markdown("Enter your details below:")
 
-# Input fields 
+# Input fields  
 number_courses = st.number_input("Number of Courses", min_value=1, max_value=10, value=3)
 time_study = st.number_input("Time Spent Studying (hours)", min_value=0.0, value=2.0)
 
